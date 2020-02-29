@@ -11,7 +11,7 @@ import java.util.List;
  * Just pass the Activity activity, the container Id in which you want to replace or add or remove a
  * fragment from and the Fragment Object.
  */
-public class FragmentManagerHelper {
+public class FragmentHelper {
 
     public static void replaceFragment(AppCompatActivity activity, int containerId, Fragment fragment) {
         FragmentManager fragmentManager = activity.getSupportFragmentManager();

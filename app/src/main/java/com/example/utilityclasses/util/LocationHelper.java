@@ -41,7 +41,7 @@ import com.google.android.gms.tasks.Task;
  *    After getting the location stop the Update in the onGetLocation() method of OnLocationUpdateListener
  *    Or if you want to listen location update continuously then do it in onDestroy()
  * 2) How to Use:
- *    a)LocationUtil location = new LocationUtil(getActivity(), this); this -> OnLocationUpdateListener
+ *    a)LocationHelper location = new LocationHelper(getActivity(), this); this -> OnLocationUpdateListener
  *      This is how you initialize the Class
  *    b)location.startLocationUpdates(101);
  *      This is how you start Listening to Location update.
@@ -49,7 +49,7 @@ import com.google.android.gms.tasks.Task;
  *    c)location.stopLocationUpdates()
  *      This is how you stop Location updates.
  */
-public class LocationUtil {
+public class LocationHelper {
 
     private static final long UPDATE_INTERVAL_IN_MILLISECONDS = 10000;
     private static final long FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS = 5000;
@@ -65,7 +65,7 @@ public class LocationUtil {
     private Location mCurrentLocation;
     private OnLocationUpdateListener mLocationUpdateListener;
 
-    public LocationUtil(Activity mActivity, OnLocationUpdateListener locationUpdateListener) {
+    public LocationHelper(Activity mActivity, OnLocationUpdateListener locationUpdateListener) {
         this.mActivity = mActivity;
         this.mLocationUpdateListener = locationUpdateListener;
         init();

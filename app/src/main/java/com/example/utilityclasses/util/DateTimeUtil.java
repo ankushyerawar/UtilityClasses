@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class DateTimeFormattingUtil {
+public class DateTimeUtil {
 
     /**
      * Converts the String date to Date object
