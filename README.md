@@ -42,7 +42,7 @@ and easier to store things in SharedPreferences this is helper class fot the sam
      
 # Extra
 
-Feel free to contribute and make living worth while.
+Feel free to contribute and make living worthwhile.
 
 
 
